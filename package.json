@@ -1,0 +1,32 @@
+{
+  "name": "@leolandev/janitor",
+  "version": "1.0.2",
+  "main": "out/Janitor.luau",
+  "scripts": {
+    "build": "rbxtsc",
+    "watch": "rbxtsc -w",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [],
+  "author": "LeolanDev",
+  "license": "MIT",
+  "description": "",
+  "types": "out/Janitor.d.ts",
+  "files": [
+    "out",
+    "!**/*.tsbuildinfo"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@rbxts/compiler-types": "^3.0.0-types.0",
+    "@rbxts/types": "^1.0.956",
+    "@typescript-eslint/eslint-plugin": "^8.71.0",
+    "@typescript-eslint/parser": "^8.71.0",
+    "eslint": "^10.12.0",
+    "eslint-plugin-roblox-ts": "^1.4.1",
+    "roblox-ts": "^3.0.0",
+    "typescript": "^5.9.3"
+  }
+}
