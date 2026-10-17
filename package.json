@@ -1,6 +1,6 @@
 {
   "name": "@leolandev/janitor",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "out/Janitor.luau",
   "scripts": {
     "build": "rbxtsc",
@@ -29,7 +29,5 @@
     "roblox-ts": "^3.0.0",
     "typescript": "^5.9.3"
   },
-  "dependencies": {
-    "roblox-ts-modded": "file:../../../../roblox-ts-modded/mod.tgz"
-  }
+  "dependencies": {}
 }
