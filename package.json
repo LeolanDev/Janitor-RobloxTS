@@ -1,6 +1,6 @@
 {
-  "name": "@leolandev/janitor",
-  "version": "1.0.4",
+  "name": "@leolandev/fastjanitor",
+  "version": "1.0.0",
   "main": "out/Janitor.luau",
   "scripts": {
     "build": "rbxtsc",
