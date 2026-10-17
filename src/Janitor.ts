@@ -17,12 +17,14 @@ export default class Janitor {
      * @param associatedClass Main class associated with deletion upon executing "cleanUp()".
      */
     constructor(associatedClass: object) { this.memoryStack.push(associatedClass); }
-
     /**
      * Adds a complete list of objects to the memory stack.
      * @param objList List of objects to add to the memory stack.
      */
-    addObjectList(...objList: JanitableObject[]): void { for (const v of objList) this.memoryStack.push(v); }
+    addObjectList(objList: JanitableObject[]): void {
+        const { memoryStack } = this;
+        objList.move(0, objList.size(), memoryStack.size(), memoryStack);
+    }
     /**
      * Adds an object to the Janitor's memory stack and returns that same object.
      * @param obj JanitableObject to push in memory stack.
@@ -55,7 +57,6 @@ export default class Janitor {
 
         Janitor.destroyLuauTable(this);
     }
-
     /**
      * Destroys any object considered a luau table.
      * @param obj Object to be destroyed.

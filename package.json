@@ -28,5 +28,8 @@
     "eslint-plugin-roblox-ts": "^1.4.1",
     "roblox-ts": "^3.0.0",
     "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "roblox-ts-modded": "file:../../../../roblox-ts-modded/mod.tgz"
   }
 }
