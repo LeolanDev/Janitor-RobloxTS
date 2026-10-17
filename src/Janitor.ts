@@ -23,7 +23,7 @@ export default class Janitor {
      */
     addObjectList(objList: JanitableObject[]): void {
         const { memoryStack } = this;
-        objList.move(0, objList.size(), memoryStack.size(), memoryStack);
+        objList.move(0, objList.size() - 1, memoryStack.size(), memoryStack);
     }
     /**
      * Adds an object to the Janitor's memory stack and returns that same object.
